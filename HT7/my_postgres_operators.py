@@ -68,7 +68,7 @@ class myPostgresOperator_TablesToCSV(BaseOperator):
 
     def execute(self, context):
         
-         file = open(self.tables_csv_filename,newline='')
+        file = open(self.tables_csv_filename,newline='')
         tables =[]
         with file:
             reader = csv.reader(file)
